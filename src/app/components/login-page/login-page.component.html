@@ -1,0 +1,17 @@
+<div class="nct-login-form">
+    <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="text-center">
+            <img src="../../../assets/img/nct_logo2.png" alt="" class="rounded nct-image">
+        </div>
+
+        <div class="nct-form">
+            <input type="text" class="form-control form-control-lg" placeholder="Username" formControlName="username">
+            <input type="password" class="form-control form-control-lg" placeholder="Password" formControlName="password">    
+        </div>
+        
+        <div class="text-center nct-btn">
+            <button type="submit" class="btn btn-primary btn-lg" [disabled]="loginForm.invalid">Login</button>
+            <button type="submit" class="btn btn-primary btn-lg" (click)="signup()">Signup</button>
+        </div>
+    </form>
+</div>

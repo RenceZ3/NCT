@@ -1,0 +1,12 @@
+<div class="nct-signup-form text-center ">
+    <form action="" [formGroup]="signupForm">
+        <input type="text" class="form-control form-control-lg" placeholder="First Name" formControlName="firstName">
+        <input type="text" class="form-control form-control-lg" placeholder="Last Name" formControlName="lastName">
+        <input type="text" class="form-control form-control-lg" placeholder="Username" formControlName="userName">
+        <input type="password" class="form-control form-control-lg" placeholder="Password" formControlName="password">
+        <input type="password" class="form-control form-control-lg" placeholder="Retype Password" formControlName="rePassword">
+        <input type="file" class="custom-file-input" #fileInput formControlName="imageData" (change)="onfileUploadImage($event)">
+        <br>
+        <button class="btn btn-primary btn-lg" type="button" (click)="signup()">Signup</button>
+    </form>
+</div>

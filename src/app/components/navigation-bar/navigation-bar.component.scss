@@ -1,0 +1,21 @@
+.nct_nav {
+    .nct_logo {
+        img {
+            height: 3.2em;
+        }
+    }
+    .navbar-collapse {
+        .avatar-img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 2px black solid;
+            padding: 5px;
+
+            &:hover {
+                border: 3px white solid;
+            }
+        }
+
+    }
+}

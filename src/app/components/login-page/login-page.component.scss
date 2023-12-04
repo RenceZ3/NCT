@@ -1,0 +1,23 @@
+.nct-login-form {
+    padding: 100px;
+    margin: 10em;
+    border: 2px black solid;
+    background-color: bisque;
+    border-radius: 15px;
+
+    input{
+        margin: 10px;
+    }
+
+    .nct-image {
+        height: 5em;
+        margin: 20px;
+        width: 9em;
+    }
+
+    .nct-btn {
+        button {
+            margin: 1px;
+        }
+    }
+}
