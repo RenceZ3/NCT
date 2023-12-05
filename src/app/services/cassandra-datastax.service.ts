@@ -22,6 +22,16 @@ export class CassandraDatastaxService {
     return this.http.get<any[]>(`${environment.PRIMARY_LINK}/get-student`, this.options);
   }
 
+  checkLoginCredentials(username: string, password: string): Observable<boolean> {
+    const body = { username, password };
+    return this.http.post<boolean>(`${environment.PRIMARY_LINK}/login-student`, body, this.options);
+  }
+
+  getStudent(id: string): Observable<any> {
+    const body = { id };
+    return this.http.post<any[]>(`${environment.PRIMARY_LINK}/get-student/id`, body, this.options);
+  }
+
   insertStudentDetails(data: {studid: string, fname: string, lname: string, uname: string, pass: string, image: any }): Observable<any> {
     const formdata = new FormData();
     formdata.append('studid', data.studid);
